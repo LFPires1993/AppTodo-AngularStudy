@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todo-input-add-items',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-input-add-items.component.scss']
 })
 export class TodoInputAddItemsComponent {
+  @Output() emitTaskItemList = new EventEmitter();
 
+  newTaskItem: string = "";
+
+  submitTaskItem() {
+    if (this.newTaskItem.trim()) {
+      this.emitTaskItemList.emit(this.newTaskItem);
+      this.newTaskItem = "";
+    }
+  }
 }
