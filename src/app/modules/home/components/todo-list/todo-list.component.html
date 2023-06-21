@@ -5,7 +5,7 @@
             <input type="text" (keyup.enter)="validationInputItem(item.task, i)" [(ngModel)]="item.task" [ngClass]="{'checked' : item.checked}">
 
             <button (click)="deleteTaskItem(i)">
-                <img src="../../../../../assets/icons/icon-trash.svg">
+                <img src="">
             </button>
         </li>
     </ul>
@@ -13,3 +13,4 @@
 
 <app-todo-input-add-items (emitTaskItemList)="setEmitTaskItem($event)"></app-todo-input-add-items>
 <app-todo-button-delete-all *ngIf="taskList.length" (click)="deleteAllTasks()"></app-todo-button-delete-all>
+<app-footer>

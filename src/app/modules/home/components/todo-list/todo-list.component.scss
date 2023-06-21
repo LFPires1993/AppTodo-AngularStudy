@@ -1,4 +1,7 @@
 section{
+  img{
+    width: 15px;
+  }
     width: 100%;
     min-height: 250px;
   
@@ -42,7 +45,10 @@ section{
   
         button{
           width: 5%;
-          background: none;
+          background-image: url("../../../../../assets/img/icon-trash.png");
+          background-size: 11px;
+          background-repeat: no-repeat;
+          background-position: center;
           border: none;
         }
       }
