@@ -10,6 +10,7 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -19,7 +20,8 @@ import { HomeComponent } from './pages/home/home.component';
     TodoButtonDeleteAllComponent,
     TodoInputAddItemsComponent,
     TodoListComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
